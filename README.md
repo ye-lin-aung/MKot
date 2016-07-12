@@ -24,7 +24,7 @@ println("zawgyi2uni")
 
  ```
 
-#### Output #### 
+#### Output 
  ```
   With Varaiable : မင်္ဂလာပါ
   Directly : မင်္ဂလာပါ
@@ -47,7 +47,7 @@ println("zawgyi2uni")
  
  
 
-#### Output #### 
+#### Output 
  ```
   With Varaiable : မဂၤလာပါ
   Directly : မဂၤလာပါ
@@ -66,7 +66,7 @@ println("မဂၤလာပါ".isUnicode())
 
  ```
 
-#### Output ####
+#### Output 
 
  ```
 false
@@ -104,7 +104,7 @@ randomList.convertListToZg().forEach {
     }
  ```
 
- ### Output ### 
+#### Output 
  ```
  aa
 bb
@@ -130,7 +130,7 @@ var randomList = mutableListOf("aa","bb","cc","dd","မဂၤလာပါ","မ�
  
  
 
-####  Output #### 
+####  Output 
  ```
 aa
 bb
@@ -157,7 +157,7 @@ dd
 
  ```
 
-#### Output #### 
+#### Output 
  ```
 မဂၤလာပါ
 မဂၤလာပါ
@@ -182,7 +182,7 @@ dd
  
  
 
-#### Output ####
+#### Output 
 
  ```
 မင်္ဂလာပါ
@@ -194,7 +194,7 @@ dd
 
 
 
-# Download Jar#
+# Download Jar
 
 <a href="https://github.com/ye-lin-aung/MKot/blob/master/build/libs/MKot-1.0.jar?raw=true" target="_blank"><img src="http://cognition.ouc.ac.cy/cclab/images/DownloadButton.png" alt="IMAGE ALT TEXT HERE" width="100" height="100"  />
 </a>
