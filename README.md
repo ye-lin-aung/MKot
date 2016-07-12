@@ -21,9 +21,10 @@ println("With Varaiable : "+mingalarpar)
 println("Directly : " + "မဂၤလာပါ".zg2uni())
 
 println("zawgyi2uni")
+
  ```
 
- ### Output ### 
+#### Output #### 
  ```
   With Varaiable : မင်္ဂလာပါ
   Directly : မင်္ဂလာပါ
@@ -46,7 +47,7 @@ println("zawgyi2uni")
  
  
 
- ### Output ### 
+#### Output #### 
  ```
   With Varaiable : မဂၤလာပါ
   Directly : မဂၤလာပါ
@@ -65,7 +66,8 @@ println("မဂၤလာပါ".isUnicode())
 
  ```
 
- ### Output ### 
+#### Output ####
+
  ```
 false
 ```
@@ -81,7 +83,7 @@ println("မင်္ဂလာပါ".isUnicode())
  
  
 
- ### Output ### 
+#### Output #### 
  ```
 true
 ```
@@ -113,7 +115,7 @@ dd
 ```
 
 ### **Unicode** ###
-** **
+
 #### Input ####
 ``` 
 //Unicode 
@@ -123,11 +125,12 @@ var randomList = mutableListOf("aa","bb","cc","dd","မဂၤလာပါ","မ�
     randomList.convertListToUni().forEach {
         println(it)
     }
+    
  ```
  
  
 
- ### Output ### 
+####  Output #### 
  ```
 aa
 bb
@@ -154,7 +157,7 @@ dd
 
  ```
 
- ### Output ### 
+#### Output #### 
  ```
 မဂၤလာပါ
 မဂၤလာပါ
@@ -179,7 +182,8 @@ dd
  
  
 
- ### Output ### 
+#### Output ####
+
  ```
 မင်္ဂလာပါ
 မင်္ဂလာပါ
