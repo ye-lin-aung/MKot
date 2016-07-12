@@ -1,7 +1,7 @@
 import java.util.regex.Pattern
 
 
-    // For detecting if Myanmar text is encoded with Zawgyi vs. Unicode characters.
+
 
      val ZAWGYI_DETECT_PATTERN = Pattern.compile(
             // A regular expression matched if text is Zawgyi encoding.
@@ -125,4 +125,3 @@ import java.util.regex.Pattern
         return matcher.find()
     }
 
-  
