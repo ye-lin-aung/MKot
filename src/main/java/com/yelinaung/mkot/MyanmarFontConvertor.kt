@@ -125,12 +125,4 @@ import java.util.regex.Pattern
         return matcher.find()
     }
 
-    /**
-     * Converts Zawgyi-encoded string into Unicode equivalent.
-
-     * @param value
-     * *          the Zawgyi string to be converted
-     * *
-     * @return
-     * *          the Unicode string from converstion
-     */
+  
