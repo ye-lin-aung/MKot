@@ -4,6 +4,14 @@
 
 #### Myanmar font convertor library for kotlin ####
 
+# Features
+
+- Converting a String
+- Detector
+- Converting everything in a list
+- Filtering a list
+
+
 # Examples #
 
 ## Converting a String ##
