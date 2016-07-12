@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MKot.iml" filepath="$PROJECT_DIR$/.idea/modules/MKot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MKot_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MKot_main.iml" group="MKot" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MKot_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MKot_test.iml" group="MKot" />
+    </modules>
+  </component>
+</project>
