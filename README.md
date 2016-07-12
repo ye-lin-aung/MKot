@@ -8,9 +8,10 @@
 
 ## Converting a String ##
 
-## **Zawgyi** ##
+ 
+### **Zawgyi** ###
 ** **
-### Input ###
+#### Input ####
 ``` 
 //Zawgyi 
 var mingalarpar = "မဂၤလာပါ".zg2uni()
@@ -29,9 +30,9 @@ println("zawgyi2uni")
   zawgyi2uni
 ```
 
-## **Unicode** ##
+### **Unicode** ###
 ** **
-### Input ###
+#### Input ####
 ``` 
 //Unicode 
 var mingalarpar = "မင်္ဂလာပါ".zg2uni()
@@ -51,3 +52,144 @@ println("zawgyi2uni")
   Directly : မဂၤလာပါ
   zawgyi2uni
 ```
+
+## Detecting Unicode or Zawgyi ##
+
+### **Zawgyi** ###
+** **
+#### Input ####
+``` 
+//Zawgyi
+
+println("မဂၤလာပါ".isUnicode())
+
+ ```
+
+ ### Output ### 
+ ```
+false
+```
+
+### **Unicode** ###
+** **
+#### Input ####
+``` 
+//Unicode 
+
+println("မင်္ဂလာပါ".isUnicode())
+ ```
+ 
+ 
+
+ ### Output ### 
+ ```
+true
+```
+
+
+## Converting everything in a list  ##
+
+### **Zawgyi** ###
+** **
+#### Input ####
+``` 
+//Zawgyi 
+
+var randomList = mutableListOf("aa","bb","cc","dd","မဂၤလာပါ","မင်္ဂလာပါ");
+
+randomList.convertListToZg().forEach {
+        println(it)
+    }
+ ```
+
+ ### Output ### 
+ ```
+ aa
+bb
+cc
+dd
+မဂၤလာပါ
+မဂၤလာပါ
+```
+
+### **Unicode** ###
+** **
+#### Input ####
+``` 
+//Unicode 
+
+var randomList = mutableListOf("aa","bb","cc","dd","မဂၤလာပါ","မင်္ဂလာပါ");
+
+    randomList.convertListToUni().forEach {
+        println(it)
+    }
+ ```
+ 
+ 
+
+ ### Output ### 
+ ```
+aa
+bb
+cc
+dd
+မင်္ဂလာပါ
+မင်္ဂလာပါ
+```
+
+
+## Filtering  in a list   ##
+
+### **Zawgyi** ###
+** **
+#### Input ####
+``` 
+//Zawgyi 
+
+ var randomList = mutableListOf("မဂၤလာပါ","မဂၤလာပါ","မင်္ဂလာပါ","မဂၤလာပါ","မဂၤလာပါ","မင်္ဂလာပါ");
+
+    randomList.filterZgText().forEach {
+        println(it)
+    }
+
+ ```
+
+ ### Output ### 
+ ```
+မဂၤလာပါ
+မဂၤလာပါ
+မဂၤလာပါ
+မဂၤလာပါ
+
+```
+
+### **Unicode** ###
+** **
+#### Input ####
+``` 
+//Unicode 
+
+  var randomList = mutableListOf("မဂၤလာပါ","မဂၤလာပါ","မင်္ဂလာပါ","မဂၤလာပါ","မဂၤလာပါ","မင်္ဂလာပါ");
+
+    randomList.filterUniText().forEach {
+        println(it)
+    }
+
+ ```
+ 
+ 
+
+ ### Output ### 
+ ```
+မင်္ဂလာပါ
+မင်္ဂလာပါ
+
+```
+
+
+
+
+
+# Downloads #
+
+<a href="http://cognition.ouc.ac.cy/cclab/images/DownloadButton.png" target="_blank"><img src="http://cognition.ouc.ac.cy/cclab/images/DownloadButton.png" alt="IMAGE ALT TEXT HERE" width="100" height="100"  />
