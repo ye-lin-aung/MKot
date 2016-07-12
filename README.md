@@ -6,10 +6,10 @@
 
 # Features
 
-- Converting a String
-- Detector
-- Converting everything in a list
-- Filtering a list
+- [Converting a String](https://github.com/ye-lin-aung/MKot#converting-a-string) 
+- [Detector](https://github.com/ye-lin-aung/MKot#detecting-unicode-or-zawgyi)
+- [Converting everything in a list](https://github.com/ye-lin-aung/MKot#converting-everything-in-a-list)
+- [Filtering a list](https://github.com/ye-lin-aung/MKot#filtering--in-a-list)
 
 
 # Examples #
