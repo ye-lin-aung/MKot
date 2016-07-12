@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8072100a-cc49-4cf2-ab6f-9c70856ee730" name="Default" comment="" />
+    <list default="true" id="8072100a-cc49-4cf2-ab6f-9c70856ee730" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
     <ignored path="MKot.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -94,8 +96,8 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17328">
-              <caret line="722" column="15" selection-start-line="722" selection-start-column="15" selection-end-line="722" selection-end-column="15" />
+            <state relative-caret-position="17664">
+              <caret line="736" column="15" selection-start-line="736" selection-start-column="15" selection-end-line="736" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -1236,12 +1238,12 @@
       <updated>1468312487346</updated>
       <workItem from="1468312491383" duration="849000" />
       <workItem from="1468313452877" duration="2355000" />
-      <workItem from="1468318110553" duration="1269000" />
+      <workItem from="1468318110553" duration="1579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4473000" />
+    <option name="totallyTimeSpent" value="4783000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1431,8 +1433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17328">
-          <caret line="722" column="15" selection-start-line="722" selection-start-column="15" selection-end-line="722" selection-end-column="15" />
+        <state relative-caret-position="17664">
+          <caret line="736" column="15" selection-start-line="736" selection-start-column="15" selection-end-line="736" selection-end-column="15" />
           <folding />
         </state>
       </provider>

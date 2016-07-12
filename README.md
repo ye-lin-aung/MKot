@@ -83,7 +83,7 @@ println("မင်္ဂလာပါ".isUnicode())
  
  
 
-#### Output #### 
+#### Output 
  ```
 true
 ```
