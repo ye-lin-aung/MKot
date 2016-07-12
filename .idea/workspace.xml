@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8072100a-cc49-4cf2-ab6f-9c70856ee730" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/MKot_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/MKot_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/MKot_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/MKot_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-    </list>
+    <list default="true" id="8072100a-cc49-4cf2-ab6f-9c70856ee730" name="Default" comment="" />
     <ignored path="MKot.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -111,8 +104,8 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="734" column="15" selection-start-line="734" selection-start-column="15" selection-end-line="734" selection-end-column="15" />
+            <state relative-caret-position="264">
+              <caret line="728" column="15" selection-start-line="728" selection-start-column="15" selection-end-line="728" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -1234,12 +1227,12 @@
       <option name="presentableId" value="Default" />
       <updated>1468312487346</updated>
       <workItem from="1468312491383" duration="849000" />
-      <workItem from="1468313452877" duration="2141000" />
+      <workItem from="1468313452877" duration="2355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2990000" />
+    <option name="totallyTimeSpent" value="3204000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1365,8 +1358,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="734" column="15" selection-start-line="734" selection-start-column="15" selection-end-line="734" selection-end-column="15" />
+        <state relative-caret-position="264">
+          <caret line="728" column="15" selection-start-line="728" selection-start-column="15" selection-end-line="728" selection-end-column="15" />
           <folding />
         </state>
       </provider>
