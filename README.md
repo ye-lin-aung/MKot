@@ -21,7 +21,6 @@
 ** **
 #### Input ####
 ``` 
-//Zawgyi 
 var mingalarpar = "မဂၤလာပါ".zg2uni()
 
 println("With Varaiable : "+mingalarpar)
@@ -29,7 +28,6 @@ println("With Varaiable : "+mingalarpar)
 println("Directly : " + "မဂၤလာပါ".zg2uni())
 
 println("zawgyi2uni")
-
  ```
 
 #### Output 
@@ -42,8 +40,7 @@ println("zawgyi2uni")
 ### **Unicode** ###
 ** **
 #### Input ####
-``` 
-//Unicode 
+```  
 var mingalarpar = "မင်္ဂလာပါ".zg2uni()
 
 println("With Varaiable : "+mingalarpar)
@@ -68,10 +65,7 @@ println("zawgyi2uni")
 ** **
 #### Input ####
 ``` 
-//Zawgyi
-
 println("မဂၤလာပါ".isUnicode())
-
  ```
 
 #### Output 
@@ -84,8 +78,6 @@ false
 ** **
 #### Input ####
 ``` 
-//Unicode 
-
 println("မင်္ဂလာပါ".isUnicode())
  ```
  
@@ -103,8 +95,6 @@ true
 ** **
 #### Input ####
 ``` 
-//Zawgyi 
-
 var randomList = mutableListOf("aa","bb","cc","dd","မဂၤလာပါ","မင်္ဂလာပါ");
 
 randomList.convertListToZg().forEach {
@@ -126,14 +116,11 @@ dd
 
 #### Input ####
 ``` 
-//Unicode 
-
 var randomList = mutableListOf("aa","bb","cc","dd","မဂၤလာပါ","မင်္ဂလာပါ");
 
     randomList.convertListToUni().forEach {
         println(it)
     }
-    
  ```
  
  
@@ -155,8 +142,6 @@ dd
 ** **
 #### Input ####
 ``` 
-//Zawgyi 
-
  var randomList = mutableListOf("မဂၤလာပါ","မဂၤလာပါ","မင်္ဂလာပါ","မဂၤလာပါ","မဂၤလာပါ","မင်္ဂလာပါ");
 
     randomList.filterZgText().forEach {
@@ -178,8 +163,6 @@ dd
 ** **
 #### Input ####
 ``` 
-//Unicode 
-
   var randomList = mutableListOf("မဂၤလာပါ","မဂၤလာပါ","မင်္ဂလာပါ","မဂၤလာပါ","မဂၤလာပါ","မင်္ဂလာပါ");
 
     randomList.filterUniText().forEach {
@@ -195,7 +178,6 @@ dd
  ```
 မင်္ဂလာပါ
 မင်္ဂလာပါ
-
 ```
 
 
