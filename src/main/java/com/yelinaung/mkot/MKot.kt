@@ -18,49 +18,7 @@ fun String.isUnicode():Boolean = !this.isZawgyiEncoded()
 fun String.uni2zg(): String = replace_with_rule(uni2zgrule, this)
 fun String.zg2uni(): String = replace_with_rule(zg2uni_rule, this)
 
-fun Collection<String>.filterUniText():List<String>{
-    val result = arrayListOf<String>()
-    for (item in this)
-        if(!item.isZawgyiEncoded()) {
-            var item = item.toString()
-            result.add(item)
-        }
-    return result
-}
-fun Collection<String>.filterZgText():List<String>{
-    val result = arrayListOf<String>()
-    for (item in this)
-        if(item.isZawgyiEncoded()) {
-            var item = item.toString()
-            result.add(item)
-        }
-    return result
-}
 
-fun Collection<String>.convertListToZg():List<String>{
-    val result = arrayListOf<String>()
-    for (item in this) {
-        if(!item.isZawgyiEncoded()) {
-            result.add(item.uni2zg())
-        }else{
-            result.add(item)
-        }
-    }
-    return result
-}
-
-fun Collection<String>.convertListToUni():List<String>{
-    val result = arrayListOf<String>()
-    for (item in this) {
-        if(item.isZawgyiEncoded()) {
-            result.add(item.zg2uni())
-        }else{
-            result.add(item)
-        }
-    }
-
-    return result
-}
 
 
 private fun replace_with_rule(rule: String, output: String): String {

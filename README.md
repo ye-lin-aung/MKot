@@ -10,6 +10,8 @@
 - [Detector](https://github.com/ye-lin-aung/MKot#detecting-unicode-or-zawgyi)
 - [Converting everything in a list](https://github.com/ye-lin-aung/MKot#converting-everything-in-a-list)
 - [Filtering a list](https://github.com/ye-lin-aung/MKot#filtering--in-a-list)
+- [Filtering a list](https://github.com/ye-lin-aung/MKot#filtering--in-a-list)
+- [Filtering a list](https://github.com/ye-lin-aung/MKot#filtering--in-a-list)
 
 
 # Examples #
@@ -97,7 +99,7 @@ true
 ``` 
 var randomList = mutableListOf("aa","bb","cc","dd","မဂၤလာပါ","မင်္ဂလာပါ");
 
-randomList.convertListToZg().forEach {
+randomList.toZawgyi().forEach {
         println(it)
     }
  ```
@@ -118,7 +120,7 @@ dd
 ``` 
 var randomList = mutableListOf("aa","bb","cc","dd","မဂၤလာပါ","မင်္ဂလာပါ");
 
-    randomList.convertListToUni().forEach {
+    randomList.toUnicode.forEach {
         println(it)
     }
  ```
@@ -181,10 +183,99 @@ dd
 ```
 
 
+## Sorting List  ##
+
+### **Zawgyi** ###
+** **
+#### Input ####
+``` 
+var randomList = mutableListOf("ခ","က","cc","ဂ","မဂၤလာပါ","မင်္ဂလာပါ","မဂၤလာပါ");
+
+randomList.sortByZawgyi().forEach {
+        println(it)
+    }
+
+ ```
+
+#### Output 
+ ```
+cc
+က
+ခ
+ဂ
+မဂၤလာပါ
+မဂၤလာပါ
+မင်္ဂလာပါ
+```
+
+### **Unicode** ###
+** **
+#### Input ####
+``` 
+var randomList = mutableListOf("ခ","က","cc","ဂ","မဂၤလာပါ","မင်္ဂလာပါ","မဂၤလာပါ");
+
+randomList.sortByUnicode().forEach {
+        println(it)
+    }
+ ```
+ 
+ 
+
+#### Output 
+
+ ```
+cc
+က
+ခ
+ဂ
+မဂၤလာပါ
+မဂၤလာပါ
+မင်္ဂလာပါ
+```
 
 
 
-# Download Jar
+## Count  ##
+
+### **Zawgyi** ###
+** **
+#### Input ####
+``` 
+var randomList = mutableListOf("မဂၤလာပါ","မဂၤလာပါ","မင်္ဂလာပါ","မဂၤလာပါ","မဂၤလာပါ","မင်္ဂလာပါ");
+
+println(randomList.zgCount())
+
+ ```
+
+#### Output 
+ ```
+4
+```
+
+### **Unicode** ###
+** **
+#### Input ####
+``` 
+var randomList = mutableListOf("မဂၤလာပါ","မဂၤလာပါ","မင်္ဂလာပါ","မဂၤလာပါ","မဂၤလာပါ","မင်္ဂလာပါ");
+
+println(randomList.uniCount())
+
+ ```
+ 
+ 
+
+#### Output 
+
+ ```
+2
+```
+
+
+
+
+
+
+# Download Jar ( version 1.1.0 )
 
 <a href="https://github.com/ye-lin-aung/MKot/blob/master/build/libs/MKot-1.0.jar?raw=true" target="_blank"><img src="http://cognition.ouc.ac.cy/cclab/images/DownloadButton.png" alt="IMAGE ALT TEXT HERE" width="100" height="100"  />
 </a>
