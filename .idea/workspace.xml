@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8072100a-cc49-4cf2-ab6f-9c70856ee730" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yelinaung/mkot/MKot.kt" afterPath="$PROJECT_DIR$/src/main/java/com/yelinaung/mkot/MKot.kt" />
     </list>
     <ignored path="MKot.iws" />
@@ -99,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yelinaung/mkot/MKot.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="3" />
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -1283,12 +1282,12 @@
       <workItem from="1468312491383" duration="849000" />
       <workItem from="1468313452877" duration="2355000" />
       <workItem from="1468318110553" duration="2110000" />
-      <workItem from="1468411246516" duration="2564000" />
+      <workItem from="1468411246516" duration="2654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7878000" />
+    <option name="totallyTimeSpent" value="7968000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1641,7 +1640,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yelinaung/mkot/MKot.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="3" />
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>
