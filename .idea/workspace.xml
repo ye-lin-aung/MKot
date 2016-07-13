@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8072100a-cc49-4cf2-ab6f-9c70856ee730" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-    </list>
+    <list default="true" id="8072100a-cc49-4cf2-ab6f-9c70856ee730" name="Default" comment="" />
     <ignored path="MKot.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1282,12 +1280,12 @@
       <workItem from="1468312491383" duration="849000" />
       <workItem from="1468313452877" duration="2355000" />
       <workItem from="1468318110553" duration="2110000" />
-      <workItem from="1468411246516" duration="2271000" />
+      <workItem from="1468411246516" duration="2349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7585000" />
+    <option name="totallyTimeSpent" value="7663000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

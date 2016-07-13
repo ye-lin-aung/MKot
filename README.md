@@ -277,7 +277,7 @@ println(randomList.uniCount())
 
 # Download Jar ( version 1.1.0 )
 
-<a href="https://github.com/ye-lin-aung/MKot/blob/master/build/libs/MKot-1.0.jar?raw=true" target="_blank"><img src="http://cognition.ouc.ac.cy/cclab/images/DownloadButton.png" alt="IMAGE ALT TEXT HERE" width="100" height="100"  />
+<a href="https://github.com/ye-lin-aung/MKot/blob/master/build/libs/MKot-1.1.0.jar?raw=true" target="_blank"><img src="http://cognition.ouc.ac.cy/cclab/images/DownloadButton.png" alt="IMAGE ALT TEXT HERE" width="100" height="100"  />
 </a>
 
 # License #
