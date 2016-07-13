@@ -1,8 +1,8 @@
-# MKot
+# MKot 
 ![alt text](http://www.yelinaung.xyz/img/MKot.png "Logo Title Text 1")
 
 
-#### Myanmar font util library for kotlin ####
+#### Myanmar font util library for kotlin ( 7.9KB ) ####
 
 # Features
 
