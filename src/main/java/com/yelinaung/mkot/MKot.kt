@@ -1,10 +1,6 @@
 import org.json.JSONArray
 import org.json.JSONException
 
-//import org.json.JSONArray
-//import org.json.JSONException
-//import org.json.JSONObject
-
 /**
  * Created by saturngod on 23/1/15.
  */
