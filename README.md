@@ -10,8 +10,8 @@
 - [Detector](https://github.com/ye-lin-aung/MKot#detecting-unicode-or-zawgyi)
 - [Converting everything in a list](https://github.com/ye-lin-aung/MKot#converting-everything-in-a-list)
 - [Filtering a list](https://github.com/ye-lin-aung/MKot#filtering--in-a-list)
-- [Filtering a list](https://github.com/ye-lin-aung/MKot#filtering--in-a-list)
-- [Filtering a list](https://github.com/ye-lin-aung/MKot#filtering--in-a-list)
+- [Sorting List](https://github.com/ye-lin-aung/MKot#sorting-list)
+- [Count](https://github.com/ye-lin-aung/MKot#count)
 
 
 # Examples #
