@@ -13,6 +13,7 @@
 - [Sorting List](https://github.com/ye-lin-aung/MKot#sorting-list)
 - [Searching List](https://github.com/ye-lin-aung/MKot#searching-list)
 - [Count](https://github.com/ye-lin-aung/MKot#count)
+- [Others](https://github.com/ye-lin-aung/MKot#other-features)
 
 
 # Examples #
