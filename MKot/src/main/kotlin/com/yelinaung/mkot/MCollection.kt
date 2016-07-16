@@ -50,7 +50,6 @@ fun Collection<String>.filterZgText(): Collection<String> {
 }
 
 
-
 fun <K> Map<K, String>.filterZgText(): Map<K, String> {
     val result: MutableMap<K, String> = mutableMapOf<K, String>()
     this.forEach {
@@ -60,7 +59,6 @@ fun <K> Map<K, String>.filterZgText(): Map<K, String> {
     }
     return result
 }
-
 
 
 fun List<String>.filterZgText(): List<String> {
@@ -106,7 +104,7 @@ fun List<String>.zgCount(): Int = this.filterZgText().size
 
 fun List<String>.uniCount(): Int = this.filterUniText().size
 
-fun <K> Map<K, String>.toZawgyi() {
+fun <K> Map<K, String>.toZawgyi(): Map<K, String> {
     val result: MutableMap<K, String> = mutableMapOf<K, String>()
     this.forEach {
         if (!(it.value).isZawgyiEncoded()) {
@@ -116,6 +114,7 @@ fun <K> Map<K, String>.toZawgyi() {
         }
 
     }
+    return result
 }
 
 
@@ -151,7 +150,7 @@ fun List<String>.searchTexts(text: String): List<Int> {
     return result
 }
 
-fun <K> Map<K, String>.toUnicode() {
+fun <K> Map<K, String>.toUnicode(): Map<K, String> {
     val result: MutableMap<K, String> = mutableMapOf<K, String>()
     this.forEach {
         if ((it.value).isZawgyiEncoded()) {
@@ -161,6 +160,7 @@ fun <K> Map<K, String>.toUnicode() {
         }
 
     }
+    return result
 }
 
 fun List<String>.toUnicode(): List<String> {
