@@ -3,7 +3,7 @@ import java.util.regex.Pattern
 
 
 
-     val ZAWGYI_DETECT_PATTERN = Pattern.compile(
+val ZAWGYI_DETECT_PATTERN = Pattern.compile(
             // A regular expression matched if text is Zawgyi encoding.
             // Using the ranges 1033-1034 or 1060-1097 will report Shan, Karen,
             // etc. as Zawgyi.
@@ -105,12 +105,6 @@ import java.util.regex.Pattern
                     + "|\u1036\u103b"
                     // Duplicated vowel
                     + "|\u102f\u102f")
-
-    // Transliteration to convert Burmese text in Zawgyi-encoded string to
-    // standard Unicode codepoints and ordering.
-
-    // TODO(ccorn): set a filter on this to restrict to range \u1000-\u109f ???
-
     /**
      * Detects Zawgyi encoding in specified input.
 
