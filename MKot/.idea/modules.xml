@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MKot.iml" filepath="$PROJECT_DIR$/.idea/modules/MKot.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MKot_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MKot_main.iml" group="MKot" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MKot_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MKot_test.iml" group="MKot" />
     </modules>
   </component>
 </project>

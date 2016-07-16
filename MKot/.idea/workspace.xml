@@ -324,7 +324,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2936976642000" />
+        <entry key="$PROJECT_DIR$" value="2936979814000" />
         <entry key="$PROJECT_DIR$/../WorkProjects/Web/grails/noticeBoard" value="1462034750000" />
       </map>
     </option>
@@ -1148,12 +1148,12 @@
       <workItem from="1468411246516" duration="2961000" />
       <workItem from="1468490931829" duration="6124000" />
       <workItem from="1468665631804" duration="447000" />
-      <workItem from="1468666157171" duration="731000" />
+      <workItem from="1468666157171" duration="770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15577000" />
+    <option name="totallyTimeSpent" value="15616000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
