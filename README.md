@@ -11,6 +11,7 @@
 - [Converting everything in a list](https://github.com/ye-lin-aung/MKot#converting-everything-in-a-list)
 - [Filtering a list](https://github.com/ye-lin-aung/MKot#filtering--in-a-list)
 - [Sorting List](https://github.com/ye-lin-aung/MKot#sorting-list)
+- [Searching List](https://github.com/ye-lin-aung/MKot#searching-list)
 - [Count](https://github.com/ye-lin-aung/MKot#count)
 
 
