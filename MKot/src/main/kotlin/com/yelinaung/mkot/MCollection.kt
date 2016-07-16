@@ -26,6 +26,7 @@ fun <K> Map<K, String>.filterUniText(): Map<K, String> {
             result[it.key] = it.value
         }
     }
+
     return result
 }
 
@@ -77,6 +78,12 @@ fun List<String>.sortByUnicode(): List<String> {
     result.sort()
     return result
 }
+
+//fun Map<String>.sortByUnicode(): Map<String> {
+//    val result = this as ArrayList
+//    result.sort()
+//    return result
+//}
 
 //fun <K> Map<K,String>.sortByZawgyi(): List<String> {
 //    val result = this
