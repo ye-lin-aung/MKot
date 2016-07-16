@@ -10,7 +10,7 @@ fun String.uni2zg(): String = replace_with_rule(uni2zgrule, this)
 fun String.zg2uni(): String = replace_with_rule(zg2uni_rule, this)
 
 private fun replace_with_rule(rule: String, output: String): String {
-    var output = output
+    var output= output
     try {
         val rule_array = JSONArray(rule)
         val max_loop = rule_array.length()
