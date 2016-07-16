@@ -9,7 +9,7 @@ import java.util.*
  * Created by user on 7/13/16.
  */
 
-fun Collection<String>.filterUniText(): List<String> {
+fun List<String>.filterUniText(): List<String> {
     val result = arrayListOf<String>()
     for (item in this)
         if (!item.isZawgyiEncoded()) {
@@ -19,7 +19,51 @@ fun Collection<String>.filterUniText(): List<String> {
     return result
 }
 
-fun Collection<String>.filterZgText(): List<String> {
+fun <K> Map<K, String>.filterUniText(): Map<K, String> {
+    val result: MutableMap<K, String> = mutableMapOf<K, String>()
+    this.forEach {
+        if (!(it.value).isZawgyiEncoded()) {
+            result[it.key] = it.value
+        }
+    }
+    return result
+}
+
+fun Collection<String>.filterUniText(): Collection<String> {
+    val result = arrayListOf<String>()
+    for (item in this)
+        if (!item.isZawgyiEncoded()) {
+            val result_item = item.toString()
+            result.add(result_item)
+        }
+    return result
+}
+
+fun Collection<String>.filterZgText(): Collection<String> {
+    val result = arrayListOf<String>()
+    for (item in this)
+        if (item.isZawgyiEncoded()) {
+            val result_item = item.toString()
+            result.add(result_item)
+        }
+    return result
+}
+
+
+
+fun <K> Map<K, String>.filterZgText(): Map<K, String> {
+    val result: MutableMap<K, String> = mutableMapOf<K, String>()
+    this.forEach {
+        if ((it.value).isZawgyiEncoded()) {
+            result[it.key] = it.value
+        }
+    }
+    return result
+}
+
+
+
+fun List<String>.filterZgText(): List<String> {
     val result = arrayListOf<String>()
     for (item in this)
         if (item.isZawgyiEncoded()) {
@@ -45,8 +89,6 @@ fun List<String>.sortByUnicode(): List<String> {
 //}
 
 
-
-
 fun List<String>.sortByZawgyi(): List<String> {
     val result = this as ArrayList
     result.toUnicode()
@@ -55,9 +97,9 @@ fun List<String>.sortByZawgyi(): List<String> {
     return result
 }
 
-fun <K>Map<K,String>.uniCount(): Int = this.values.filterUniText().size
+fun <K> Map<K, String>.uniCount(): Int = this.values.filterUniText().size
 
-fun <K>Map<K,String>.zgCount(): Int = this.values.filterZgText().size
+fun <K> Map<K, String>.zgCount(): Int = this.values.filterZgText().size
 
 
 fun List<String>.zgCount(): Int = this.filterZgText().size
