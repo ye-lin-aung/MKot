@@ -30,14 +30,24 @@ fun Collection<String>.filterZgText(): List<String> {
 }
 
 
-fun Collection<String>.sortByUnicode(): List<String> {
+fun List<String>.sortByUnicode(): List<String> {
     val result = this as ArrayList
     result.sort()
     return result
 }
 
+//fun <K> Map<K,String>.sortByZawgyi(): List<String> {
+//    val result = this
+//    result.toUnicode()
+//    result.values.sort()
+//    result.toZawgyi()
+//    return result
+//}
 
-fun Collection<String>.sortByZawgyi(): List<String> {
+
+
+
+fun List<String>.sortByZawgyi(): List<String> {
     val result = this as ArrayList
     result.toUnicode()
     result.sort()
