@@ -45,9 +45,14 @@ fun Collection<String>.sortByZawgyi(): List<String> {
     return result
 }
 
-fun Collection<String>.zgCount(): Int = this.filterZgText().size
+fun <K>Map<K,String>.uniCount(): Int = this.values.filterUniText().size
 
-fun Collection<String>.uniCount(): Int = this.filterUniText().size
+fun <K>Map<K,String>.zgCount(): Int = this.values.filterZgText().size
+
+
+fun List<String>.zgCount(): Int = this.filterZgText().size
+
+fun List<String>.uniCount(): Int = this.filterUniText().size
 
 fun <K> Map<K, String>.toZawgyi() {
     val result: MutableMap<K, String> = mutableMapOf<K, String>()
@@ -62,7 +67,7 @@ fun <K> Map<K, String>.toZawgyi() {
 }
 
 
-fun Collection<String>.toZawgyi(): List<String> {
+fun List<String>.toZawgyi(): List<String> {
     val result = arrayListOf<String>()
     for (item in this) {
         if (!item.isZawgyiEncoded()) {
