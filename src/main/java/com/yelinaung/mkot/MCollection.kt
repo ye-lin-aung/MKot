@@ -49,6 +49,19 @@ fun Collection<String>.zgCount(): Int = this.filterZgText().size
 
 fun Collection<String>.uniCount(): Int = this.filterUniText().size
 
+fun <K> Map<K, String>.toZawgyi() {
+    val result: MutableMap<K, String> = mutableMapOf<K, String>()
+    this.forEach {
+        if (!(it.value).isZawgyiEncoded()) {
+            result[it.key] = it.value.uni2zg()
+        } else {
+            result[it.key] = it.value
+        }
+
+    }
+}
+
+
 fun Collection<String>.toZawgyi(): List<String> {
     val result = arrayListOf<String>()
     for (item in this) {
@@ -81,8 +94,19 @@ fun List<String>.searchTexts(text: String): List<Int> {
     return result
 }
 
-//fun Collection<Int>.filterText
-fun Collection<String>.toUnicode(): List<String> {
+fun <K> Map<K, String>.toUnicode() {
+    val result: MutableMap<K, String> = mutableMapOf<K, String>()
+    this.forEach {
+        if ((it.value).isZawgyiEncoded()) {
+            result[it.key] = it.value.zg2uni()
+        } else {
+            result[it.key] = it.value
+        }
+
+    }
+}
+
+fun List<String>.toUnicode(): List<String> {
     val result = arrayListOf<String>()
     for (item in this) {
         if (item.isZawgyiEncoded()) {
