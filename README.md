@@ -344,7 +344,7 @@ println(randomList.uniCount())
 
 
 
-# Download Jar ( version 1.1.0 )
+# Download Jar ( version 1.1.2 )
 
 _You need to add [org.json.jar](https://github.com/ye-lin-aung/MKot/blob/master/jars/org.json.jar?raw=true)_ 
 
