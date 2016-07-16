@@ -61,10 +61,20 @@ fun Collection<String>.toZawgyi(): List<String> {
     return result
 }
 
+fun <K> Map<K, String>.searchTexts(text: String): List<K> {
+    val result = arrayListOf<K>()
+    this.forEach {
+        if ((it.value).equals(text, true)) {
+            result.add(it.key);
+        }
+    }
+    return result
+}
+
 fun List<String>.searchTexts(text: String): List<Int> {
     val result = arrayListOf<Int>()
-    for (i in 0..this.count()-1) {
-        if (this[i].equals(text,true)) {
+    for (i in 0..this.count() - 1) {
+        if (this[i].equals(text, true)) {
             result.add(i);
         }
     }
