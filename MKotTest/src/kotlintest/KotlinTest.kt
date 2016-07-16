@@ -1,6 +1,6 @@
 package kotlintest
 
-import com.yelinaung.mkot.filterUniText
+import com.yelinaung.mkot.searchTexts
 import com.yelinaung.mkot.toUnicode
 
 /**
@@ -8,14 +8,15 @@ import com.yelinaung.mkot.toUnicode
  */
 fun main(args: Array<String>) {
     val map: MutableMap<Int, String> = mutableMapOf()
-    map[1] = "မဂၤလာပါ"
+    map[1] = "မင်္ဂလာပါ"
     map[2] = "bb"
-    map[3] = "မဂၤလာပါ"
+    map[3] = "မင်္ဂလာပါ"
+    map[7] = "မဂၤလာပါ"
     map[4] = "dd"
     map[5] = "ee"
     map[6] = "ff"
-    val list: MutableList<String> = map.values.toMutableList()
-    map.filterUniText().forEach {
+    //Can use list too
+    map.searchTexts("မင်္ဂလာပါ").forEach {
         println(it)
     }
 

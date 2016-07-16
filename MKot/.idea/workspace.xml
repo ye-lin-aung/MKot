@@ -97,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -1148,12 +1148,12 @@
       <workItem from="1468411246516" duration="2961000" />
       <workItem from="1468490931829" duration="6124000" />
       <workItem from="1468665631804" duration="447000" />
-      <workItem from="1468666157171" duration="1708000" />
+      <workItem from="1468666157171" duration="2076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16554000" />
+    <option name="totallyTimeSpent" value="16922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1593,7 +1593,7 @@
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
           <folding />
         </state>
       </provider>

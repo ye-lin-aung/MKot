@@ -232,7 +232,71 @@ cc
 မဂၤလာပါ
 မင်္ဂလာပါ
 ```
+## Searching List  ##
 
+### **Zawgyi** ###
+** **
+#### Input ####
+``` 
+ val map: MutableMap<Int, String> = mutableMapOf()
+    map[1] = "မဂၤလာပါ"
+    map[2] = "bb"
+    map[3] = "မဂၤလာပါ"
+    map[4] = "dd"
+    map[5] = "ee"
+    map[6] = "ff"
+    map[7] = "မင်္ဂလာပါ"
+    
+
+    //Can use list too
+
+    map.searchTexts("မဂၤလာပါ").forEach {
+        println(it)
+    }
+
+
+ ```
+
+#### Output 
+ ```
+ //Return index list
+
+1
+3
+```
+
+### **Unicode** ###
+** **
+#### Input ####
+``` 
+val map: MutableMap<Int, String> = mutableMapOf()
+    map[1] = "မင်္ဂလာပါ"
+    map[2] = "bb"
+    map[3] = "မင်္ဂလာပါ"
+    map[4] = "dd"
+    map[5] = "ee"
+    map[6] = "ff"
+    map[7] = "မဂၤလာပါ"
+
+
+    //Can use list too
+
+    map.searchTexts("မင်္ဂလာပါ").forEach {
+        println(it)
+    }
+
+ ```
+ 
+ 
+
+#### Output 
+
+ ```
+
+1
+3
+
+```
 
 
 ## Count  ##
@@ -271,7 +335,11 @@ println(randomList.uniCount())
 ```
 
 
+# Other Features
 
+- Converting a Map
+- Filtering a Map
+- Searching a Map
 
 
 
