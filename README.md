@@ -2,7 +2,7 @@
 ![alt text](http://www.yelinaung.xyz/img/MKot.png "Logo Title Text 1")
 
 
-#### Myanmar font util library for kotlin ( 9KB ) ####
+#### Myanmar font util library for kotlin ( Less than 900KB ) ####
 
 # Features
 
@@ -347,9 +347,9 @@ println(randomList.uniCount())
 
 # Download Jar ( version 1.1.2 )
 
-_You need to add [org.json.jar](https://github.com/ye-lin-aung/MKot/blob/master/jars/org.json.jar?raw=true)_ 
+ 
 
-<a href="https://github.com/ye-lin-aung/MKot/blob/master/MKot/build/libs/MKot-1.1.2.jar?raw=true" target="_blank"><img src="http://cognition.ouc.ac.cy/cclab/images/DownloadButton.png" alt="IMAGE ALT TEXT HERE" width="100" height="100"  />
+<a href="https://raw.githubusercontent.com/ye-lin-aung/MKot/master/jars/MKot-1.1.2.jar" target="_blank"><img src="http://cognition.ouc.ac.cy/cclab/images/DownloadButton.png" alt="IMAGE ALT TEXT HERE" width="100" height="100"  />
 </a>
 
 # License #
