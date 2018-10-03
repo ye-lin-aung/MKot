@@ -103,4 +103,35 @@ class CollectionTest {
 
         assertEquals(expected, actual)
     }
+
+    @Test
+    fun testSearchingWithZawgyiString() {
+
+        val input = "မဂၤလာပါ"
+        val expected = listOf(
+                0, 5
+        )
+
+        val actual = combinedList.searchText(input)
+
+        assertEquals(expected, actual)
+    }
+
+    @Test
+    fun testSearchingWithUnicodeString() {
+
+        val input = "မင်္ဂလာပါ"
+        val expected = listOf(
+                0, 5
+        )
+
+        val actual = combinedList.searchText(input)
+
+        assertEquals(expected, actual)
+    }
 }
+
+
+
+
+

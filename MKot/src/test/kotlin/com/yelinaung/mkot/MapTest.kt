@@ -76,4 +76,26 @@ class MapTest {
 
         assertEquals(expected.toList(), actual.toList())
     }
+
+    @Test
+    fun testSearchWithZawgyiText() {
+        val input = "မဂၤလာပါ"
+        val expected = listOf(
+                1, 6
+        )
+        val actual = combinedMap.searchText(input)
+
+        assertEquals(expected, actual)
+    }
+
+    @Test
+    fun testSearchWithUnicodeText() {
+        val input = "မင်္ဂလာပါ"
+        val expected = listOf(
+                1, 6
+        )
+        val actual = combinedMap.searchText(input)
+
+        assertEquals(expected, actual)
+    }
 }

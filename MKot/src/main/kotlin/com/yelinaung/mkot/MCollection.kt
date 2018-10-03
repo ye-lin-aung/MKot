@@ -53,6 +53,18 @@ fun List<String>.sortZawgyiList(): List<String> {
     return this.map(unicodeMapPredicate).sorted().map(zawgyieMapPredicate)
 }
 
+
+fun List<String>.searchText(keyword: String): List<Int> {
+    val standardizedKeyword = unicodeMapPredicate(keyword)
+    val indexList = mutableListOf<Int>()
+    this.toUnicode().forEachIndexed { index, value ->
+        if (value == standardizedKeyword) {
+            indexList.add(index)
+        }
+    }
+    return indexList
+}
+
 //endregion
 
 //region: Map
@@ -81,4 +93,16 @@ fun <K> Map<K, String>.toUnicode(): Map<K, String> {
         unicodeMapPredicate(it.value)
     }
 }
+
+fun <K> Map<K, String>.searchText(keyword: String): List<K> {
+    val standardizedKeyword = unicodeMapPredicate(keyword)
+    val keyList = mutableListOf<K>()
+    this.toUnicode().forEach { (key, value) ->
+        if (value == standardizedKeyword) {
+            keyList.add(key)
+        }
+    }
+    return keyList.toList()
+}
+
 //endregion
