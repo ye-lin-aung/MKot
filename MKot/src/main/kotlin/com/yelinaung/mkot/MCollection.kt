@@ -1,183 +1,84 @@
+@file:JvmName("MCollection")
+
 package com.yelinaung.mkot
 
-import isZawgyiEncoded
-import uni2zg
-import zg2uni
-import java.util.*
 
-/**
- * Created by user on 7/13/16.
- */
-
-fun List<String>.filterUniText(): List<String> {
-    val result = arrayListOf<String>()
-    for (item in this)
-        if (!item.isZawgyiEncoded()) {
-            val result_item = item.toString()
-            result.add(result_item)
-        }
-    return result
+//region : predicate functions
+val unicodeFilterPredicate: ((String) -> (Boolean)) = {
+    !it.isZawgyiEncoded()
 }
 
-fun <K> Map<K, String>.filterUniText(): Map<K, String> {
-    val result: MutableMap<K, String> = mutableMapOf<K, String>()
-    this.forEach {
-        if (!(it.value).isZawgyiEncoded()) {
-            result[it.key] = it.value
-        }
-    }
 
-    return result
+val zawgyiFilterPredicate: ((String) -> (Boolean)) = {
+    it.isZawgyiEncoded()
 }
 
+val unicodeMapPredicate: ((String) -> (String)) = {
+    if (it.isZawgyiEncoded()) it.zg2uni()
+    else it
+}
+
+val zawgyieMapPredicate: ((String) -> (String)) = {
+    if (!it.isZawgyiEncoded()) it.uni2zg()
+    else it
+}
+//endregion
+
+//region : Collection
 fun Collection<String>.filterUniText(): Collection<String> {
-    val result = arrayListOf<String>()
-    for (item in this)
-        if (!item.isZawgyiEncoded()) {
-            val result_item = item.toString()
-            result.add(result_item)
-        }
-    return result
+    return this.filter(unicodeFilterPredicate)
 }
 
 fun Collection<String>.filterZgText(): Collection<String> {
-    val result = arrayListOf<String>()
-    for (item in this)
-        if (item.isZawgyiEncoded()) {
-            val result_item = item.toString()
-            result.add(result_item)
-        }
-    return result
+    return this.filter(zawgyiFilterPredicate)
+}
+
+fun Collection<String>.zgCount(): Int = this.filterZgText().size
+
+fun Collection<String>.uniCount(): Int = this.filterUniText().size
+
+fun List<String>.toZawgyi(): List<String> {
+    return this.map(zawgyieMapPredicate)
+}
+
+fun List<String>.toUnicode(): List<String> {
+    return this.map(unicodeMapPredicate)
+}
+
+fun List<String>.sortUnicodeList(): List<String> {
+    return this.sorted()
+}
+
+fun List<String>.sortZawgyiList(): List<String> {
+    return this.map(unicodeMapPredicate).sorted().map(zawgyieMapPredicate)
+}
+
+//endregion
+
+//region: Map
+fun <K> Map<K, String>.filterUniText(): Map<K, String> {
+    return this.filterValues(unicodeFilterPredicate)
 }
 
 
 fun <K> Map<K, String>.filterZgText(): Map<K, String> {
-    val result: MutableMap<K, String> = mutableMapOf<K, String>()
-    this.forEach {
-        if ((it.value).isZawgyiEncoded()) {
-            result[it.key] = it.value
-        }
-    }
-    return result
+    return this.filterValues(zawgyiFilterPredicate)
 }
 
-
-fun List<String>.filterZgText(): List<String> {
-    val result = arrayListOf<String>()
-    for (item in this)
-        if (item.isZawgyiEncoded()) {
-            val result_item = item.toString()
-            result.add(result_item)
-        }
-    return result
-}
-
-
-fun List<String>.sortByUnicode(): List<String> {
-    val result = this as ArrayList
-    result.sort()
-    return result
-}
-
-//fun Map<String>.sortByUnicode(): Map<String> {
-//    val result = this as ArrayList
-//    result.sort()
-//    return result
-//}
-
-//fun <K> Map<K,String>.sortByZawgyi(): List<String> {
-//    val result = this
-//    result.toUnicode()
-//    result.values.sort()
-//    result.toZawgyi()
-//    return result
-//}
-
-
-fun List<String>.sortByZawgyi(): List<String> {
-    val result = this as ArrayList
-    result.toUnicode()
-    result.sort()
-    result.toZawgyi()
-    return result
-}
 
 fun <K> Map<K, String>.uniCount(): Int = this.values.filterUniText().size
 
 fun <K> Map<K, String>.zgCount(): Int = this.values.filterZgText().size
 
-
-fun List<String>.zgCount(): Int = this.filterZgText().size
-
-fun List<String>.uniCount(): Int = this.filterUniText().size
-
 fun <K> Map<K, String>.toZawgyi(): Map<K, String> {
-    val result: MutableMap<K, String> = mutableMapOf<K, String>()
-    this.forEach {
-        if (!(it.value).isZawgyiEncoded()) {
-            result[it.key] = it.value.uni2zg()
-        } else {
-            result[it.key] = it.value
-        }
-
+    return this.mapValues {
+        zawgyieMapPredicate(it.value)
     }
-    return result
-}
-
-
-fun List<String>.toZawgyi(): List<String> {
-    val result = arrayListOf<String>()
-    for (item in this) {
-        if (!item.isZawgyiEncoded()) {
-            result.add(item.uni2zg())
-        } else {
-            result.add(item)
-        }
-    }
-    return result
-}
-
-fun <K> Map<K, String>.searchTexts(text: String): List<K> {
-    val result = arrayListOf<K>()
-    this.forEach {
-        if ((it.value).equals(text, true)) {
-            result.add(it.key);
-        }
-    }
-    return result
-}
-
-fun List<String>.searchTexts(text: String): List<Int> {
-    val result = arrayListOf<Int>()
-    for (i in 0..this.count() - 1) {
-        if (this[i].equals(text, true)) {
-            result.add(i);
-        }
-    }
-    return result
 }
 
 fun <K> Map<K, String>.toUnicode(): Map<K, String> {
-    val result: MutableMap<K, String> = mutableMapOf<K, String>()
-    this.forEach {
-        if ((it.value).isZawgyiEncoded()) {
-            result[it.key] = it.value.zg2uni()
-        } else {
-            result[it.key] = it.value
-        }
-
+    return this.mapValues {
+        unicodeMapPredicate(it.value)
     }
-    return result
 }
-
-fun List<String>.toUnicode(): List<String> {
-    val result = arrayListOf<String>()
-    for (item in this) {
-        if (item.isZawgyiEncoded()) {
-            result.add(item.zg2uni())
-        } else {
-            result.add(item)
-        }
-    }
-    return result
-}
+//endregion
